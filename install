@@ -24,7 +24,7 @@ if yum -y update
 then
 yum -y update
 yum -y install git
-git clone https://github.com/RicKbrL/VpsPackPro.git
+git clone https://github.com/wilking2k7/w2k7_pack.git
 clear
 cd VpsPackPro
 rm -rf README.md
@@ -36,14 +36,15 @@ mv $arqs /bin
 chmod +x /bin/$arqs
 done
 echo -e '#!/bin/bash
-comandtop=$(wget -O- https://raw.githubusercontent.com/RicKbrL/VpsPackPro/master/checkpack)
+comandtop=$(wget -O- https://raw.githubusercontent.com/wilking2k7/w2k7_pack/master/checkpack)
 $comandtop' > /bin/checkpack
 chmod +x /bin/checkpack
 echo -e "\033[1;33mConcluido, Execute o comando \033[1;32mVpsPack\033[1;33m como root \033[0m"
 else
 apt-get update
 apt-get install -y git
-git clone https://github.com/RicKbrL/VpsPackPro.git
+git clone https://github.com/wilking2k7/w2k7_pack.git
+clear
 clear
 cd VpsPackPro
 rm -rf README.md
@@ -55,7 +56,7 @@ mv $arqs /bin
 chmod +x /bin/$arqs
 done
 echo -e '#!/bin/bash
-comandtop=$(wget -O- https://raw.githubusercontent.com/RicKbrL/VpsPackPro/master/checkpack)
+comandtop=$(wget -O- https://raw.githubusercontent.com/wilking2k7/w2k7_pack/master/checkpack)
 $comandtop' > /bin/checkpack
 chmod +x /bin/checkpack
 echo -e "\033[1;37mConcluido, Execute o comando \033[1;33mVpsPack\033[1;37m como root \033[0m"
